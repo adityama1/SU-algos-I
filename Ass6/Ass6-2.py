@@ -46,7 +46,7 @@ def main():
         elif len(max_heap) < len(min_heap):
             median_main.append(min_heap[0])
 
-    #print median_main
+    print median_main
     #print min_heap
     #print max_heap
     median_sum = sum(median_main)
