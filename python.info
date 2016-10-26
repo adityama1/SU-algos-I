@@ -1,0 +1,25 @@
+- Python classes provide all the standard features of Object Oriented Programming: the class inheritance mechanism allows multiple base classes,
+  a derived class can override any methods of its base class or classes, and a method can call the method of a base class with the same name.
+- __doc__ is also a valid attribute, returning the docstring belonging to the class: "A simple example class".
+- Generally speaking, instance variables are for data unique to each instance and class variables are for attributes and methods shared by all instances of the class:
+
+EXAMPLES:
+        class Dog:
+
+            kind = 'canine'         # class variable shared by all instances
+
+            def __init__(self, name):
+                self.name = name    # instance variable unique to each instance
+
+
+For example, the tricks list in the following code should not be used as a class variable because just a single list would be shared by all Dog instances:
+
+        class Dog:
+
+            tricks = []             # mistaken use of a class variable
+
+            def __init__(self, name):
+                self.name = name
+
+            def add_trick(self, trick):
+                self.tricks.append(trick)
