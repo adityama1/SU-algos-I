@@ -23,3 +23,17 @@ For example, the tricks list in the following code should not be used as a class
 
             def add_trick(self, trick):
                 self.tricks.append(trick)
+
+enumerate()-
+a = ["apple", "orange", "banana"]
+for (index, fruit) in enumerate(a):
+ print str(index) + ": " + fruit
+
+0: apple
+1: orange
+2: banana
+
+from collections import defaultdict
+
+_ throwaway variable
+zip to zip!
