@@ -24,6 +24,13 @@ For example, the tricks list in the following code should not be used as a class
             def add_trick(self, trick):
                 self.tricks.append(trick)
 
+Abstract Base Classes are classes that are only meant to be inherited from; you can't create instance of an ABC.
+The abc module contains a metaclass called ABCMeta (metaclasses are a bit outside the scope of this article).
+Setting a class's metaclass to ABCMeta and making one of its methods virtual makes it an ABC. A virtual method is one that the ABC says must exist in child classes,
+but doesn't necessarily actually implement.
+https://jeffknupp.com/blog/2014/06/18/improve-your-python-python-classes-and-object-oriented-programming/
+
+
 enumerate()-
 a = ["apple", "orange", "banana"]
 for (index, fruit) in enumerate(a):
