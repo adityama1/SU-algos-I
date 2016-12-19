@@ -44,3 +44,10 @@ from collections import defaultdict
 
 _ throwaway variable
 zip to zip!
+
+is vs ==
+One last thing to note, you may use the intern function to ensure that you're getting a reference to the same string:
+>>> a = intern('a')
+>>> a2 = intern('a')
+>>> a is a2
+True
